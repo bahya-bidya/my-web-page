@@ -1,252 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
- <title>Boutique FloraJoy – Fleuriste & Compositions Artisanales à Casablanca</title>
-<meta name="description" content="Boutique FloraJoy – Boutique locale de fleurs et compositions artisanales à Casablanca, Maroc. Contactez-nous." />
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique FloraJoy – Fleuriste & Compositions Artisanales</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="#">FloraJoy</a>
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#home">Accueil</a>
-        <a href="#products">Produits</a>
-        <a href="#about">À propos</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="menuToggle" class="menu-toggle" aria-label="ouvrir le menu">☰</button>
-    </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-     <section class="hero">
-  <div class="hero-container">
-    <div class="hero-text">
-
-      <h1>Flora_Joy</h1>
-      <h2>Fleurs fraîches, livrées vite</h2>
-      <p>Bouquets faits main — livraison locale le jour même.</p>
-      <a href="#products" class="btn">Voir les produits</a>
-      
-    </div>
-  </div>
-</section>
-
-    
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <h1>FloraJoy</h1>
+            <h2>Fleurs fraîches, livrées vite</h2>
+            <p>Bouquets faits main — livraison locale le jour même.</p>
+            <a href="#products" class="btn">Voir les produits</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- PRODUCTS -->
     <section id="products" class="section">
-      <div class="wrap">
-        <h2>Nos best-sellers</h2>
-        <div class="grid products-grid">
-          <!-- Card 1 -->
-          <article class="card">
-    
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISERUTExMWFhUXGRgXFxgWGRoWGxUYGBsWFxoWGxoaHSghGBsnHRYaIjEhJSorLjAuFx8zODMsNygtLisBCgoKDg0OGxAQGy8mICUtLzAwLS8tLy0rLy0tLS0tLS0vKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAPIA0AMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABAIDBQYHAQj/xABAEAABAwIEAwUGBAQFAwUAAAABAAIRAyEEEjFBBVFhBhMicYEHMpGhscEjUtHwFEJi4RVygpLxorLSFjM0Q3P/xAAbAQEAAwEBAQEAAAAAAAAAAAAAAQIDBAUGB//EADERAAIBAwIDBgYDAQADAAAAAAABAgMRIRIxBEFREyJhcYHwBZGhscHRFDLh8RUjcv/aAAwDAQACEQMRAD8A7igCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIDX+M9scHhahpVakPDQ4gNLomYBI0NtOo5qG0jopcLUqq8V9UjXOK+1zBU2t7tr6r3MLg0Q3I4EDu6hPunUyM2nUTJV0JqTi90eey3txX4jVxLa7WNyZHU2sEQ12cETJzaNvzJ6ACsoaVk32rjaTfeqMb5uA+pQpYuueACSQALknQDmhBrOD7f8OqVe6biAHEw0ua5jHHTwvcA0zte+yi6OiXCVox1OLsbPKk5z1AEAQBAEAQBAEAQBAEAQBAEAQBARuIY1tGm6o4OLWgk5Gl5gX0FyhKTbsjmWO9sEO/CwwLNi+pBI8mtIB9SoudH8fG5h+Me1TFOp1Q1gYXHNScwmaWSHhrj/APYDlvp7xCop3Z6NT4ZCFNNt6rPli9m/Ta185Odca4zUrYqrVeAwVHvqECXe8ZAk3gZvltorWMOGraaqv/WPv7kNxnM7ebeUDnpeT6hF0NqsFOcqvV48i9gq0G0g3FiRI3Ckytd5PalYkwTrtA+dlDRvRktWmWzNl4Z2uxhwr8E6qTRcGNk+8yk0EGk3+lwgHoDzUOWC9HgY9tfpksODXti0aLO59DGMXHTyMt2e7cY3BuLe9NVlhlrF9QBomA3xS3la2ljCumzya/w2jKXeVvI7X2U483G4ZtYNykyHN1yubYgHcb+qunc+f4vh+wquF7rqZlScwQBAEAQBAEAQBAEAQBAEAQEfiGNZQpPq1DDGNL3HWA0Sbb+ShuyuWhBzkox3Zwbt927fjC3uy9lHLHd5socZdd0GDaLHT5mqlc9epwH8bS3K9+fv3+NIdiHOsbTtqflv/dNSQ7CrOosW+79N/wDCXTymmadVxbMWtA5XWTk73R7s6EZw013a/qvK5j8Y0se5pIcGwAbXESCet/ktVLUkzxlQ/jyqQeUnb0tf8kUVbnqrIxqVLskYcW6/TZSzBSyXKlItuQep1VTdb3KRUMeEx109FWx2Os4q8dzLcEa4U3SQLyCb5pga+nXVZTlZ2PS+H6pQd+b+Z5i21HvgCTBvoOpkx+yrKSSuWleo9MWdO9mvajAYKgMPVc9lZxLqj3MJBMkNbmEkjLBBiLlWVSJ4nGfD+JqzbirpYSv9cnR+D8doYrP3L82Qw6xHkROrTBv0V4zUtjzOI4Otw+ntY2vt76+Bk1Y5ggCAIAgCAIAgCAIAgLeIrtY0ve4Na0S5ziAGgakk6BCYxcmoxV2zUeN+0rh9Bji2sKrxoynPiP8AmiAOv1VHUVsHoUvhlaUkqndXV/rc552i9or8Zh69CzBUcyI/kpjVkxLpcAZganayzc21ZntUPhlClUjOE72XPm+tuW5oD2y8g2gSyCCAAQCTG51ul8GipdpXalyV45xjy+Z6yiZExAjnf99VCkkJcDVlPvPHUPptk2Bk6uMx0A0Hz81F7m8OFVPDz5/hELi7jnGXdrbbbj7fJaQ2PJ+Ja1W7m1lj0sR2UhGZ8tbp5rRHmyz3p4RlXYoEyA0WA8DQ0WECwUHQrb4LVbFNAuf7pYSqQjuyDgKecuzOIy6N0m+06fC8qJOxHBwdabUntyNnp4ykGNaxpkANDXAgtdYXkQZvf9VytO+T6mhUhGCha1sZT9PmY19Z2eZgZvFt+yFe6sYu6qatupkaVYvcDYSANQYGoAGsnN8/VV2JnSVZJrruvsZfs1xuthKzagJdBMgGA9psWPA00kdQidndE8Rw/wDIpunPDf0/07xwHi9PF0GVqejhcTJa4WLTG4K64yUldHxnE8PPh6rpz5fbqZFSYBAEAQBAEAQBAEBbr1MrXO5AnlohKV3Y+c+0HavE4t0VKxuZDQS1jSNg0H5mTbVct28s+5p8PQ4SKjSWevPxzy8jA06FMOJquv8AlG55yNQpd+RaNOk5a6kvTx8fx/wtVWsAIbN9Z1G4govErOFOMWo8/mQ6NUAj962/urcjjp1FGove+CSXdbHc7KDrlNx2eCzVrt0BzddEsc9TiFsnctudJBIERFj1m/xKlSOSqnN6peRRiKviIIuLN6E3npqIUuVjnUUm9SytvMsVWbuJNpUpsirCyvNsqOEpkCRlPnr5g6+itexnLhaM1lWfn+H+Cuge6Ic8OcCID22cyN46T8kfeRgo1OFmp58GuXmTMDUexwqktqU2uFzN50uRaOexCznCOyPS4Pia7/8AZOSlHq/34fQl8QFNzpLajQZyhsDM4kDLebyTpIjdUje1js4yUO11NtJr5vCtz88FiriS0gNyjKYAG+1+ZH3Ubm0qzg1CNsfXl4ZRJHERmBqDwnnfoYIiNPkp0vkZVa0Ld5Z97HU/Ytxf8SvhpGWBWYCPEdGuM7iMq0pvNjyPikXOEavp6br8nWVseKEAQBAEAQBAEAQGle1WpXGDPd2pkgVjmykNJAaOoLjf01BKyq3sez8EjSlxFp/2t3fPn622/Z8/Yh5a8tcPIrM9+pUcKmma8mWqlUG9p8lJnUqQll7ll5J0EKHg55NvZFOEwri8OIlrT6TBPy1/ZVk1Y5I0KkqilL+q+/8Anu+bScU4EyRG0bhQ1g7pOLV38iK7K4w1t9Nbk+cQi8Tjk1KemCz8vS9rP3sUCQfIgEG2ukjl1SxVVGrt7p2a232vy9UKkHXob6nTXqpW9iZKLV3+iXRY6qNh1nSFc7IxlxEdjzEcPM3dfp+uyGfEcBdrVLPv31I+McGNG82jbn+yiRzcW40Kd3m+LHv+JlzADZzZDQBLchjwRyEb/VRoszmh8Q1U7PDW2MW6W6F/hmHeC2sxgOVzXBh1sTfmbz8uiS6McLG1q0IrDVl87v646E7iTA78VrBTqvdMVCGZoBBDSdjI1hZxTWG8HpV6kHatTilUb5tK6Syk/l0LDME2RmcKZPutLw62+lgjlbYUqVOU1q7t+V7m7ez2n3XEcO4y9maGFrvEcwcyTzaCZItYehQleSHH0VChNQ2/337yfQC6T5UIAgCAIAgCAIAgNW9pPDamI4fUZTbmdLXQIJhpkxO8XWdRNxwej8Kq06XEqVR2Vmr+LWD5wd4T70g7C/8AceSwyfTt6HmV103/ANIbnNkwD6beim0jzpVaKbtf0/W5Q2kHXLnhvPITPQHb4K6VuRy4qO+t2/8AnPvzVjMcNpxRlgiSTB8RJMi5/wAon1Kh7nbwvcppQW7vl3e/O291Yx9aoTt4pnzvf7pc0qz8M3X3yS8NwwQTTeAWwTJBdOvS0qspu9mWocJGKfZOz68/+FviDi/xx48sGOcgypjjBPFLXF1Eu/ZrHW6IXd+IxBt9bCPSCrcjgjFubtn/AFY+hfp1XMZLf+FZO51KpOlDuEc4gm+qtexzuvJ5ZRnBPiExsTChswnLtH3iv+HykS0EO2HX5gqyaOD+PNTVluXS+oxoc0nMLAyPgQQbRtpYKu7O6pSqcPR1J8/l9Hjw2LOG7yuSDDnblwGYdJ1jobeSlqxx0qkqv9n9Ff8A4XaeHDHlrmZhNiCR53AO82jZVeTqpRUZadOOXvzN07H8bw+EeKtXDms9sGj+KWhhE3dLZdrrFthuIjudVWhWqx0p2T354Oodl/aWzE1xRq0e5LzFNwfnDnHRp8LcpOx0J5WnRSPO4n4bKlHVF3tvi35ZvyseYEAQBAEAQBAYDtL2wwmAgV3nORIY0ZnETE8gNdSNCobsdXD8FVr5gsdXsarxn2i8OxWDrUyajXPaWhpa6ZOhLmS2AYJBIkW3VJSTVjsjwFfh6qnhpPdPH1/RyJ+AaLmq0mZAnLIItM6G/wBFjrb5H0fYy0pt2e9r4KmUqV2kA1ABJMSSDOUH7el1F3e5FbhaU1aUVKX16rJapYwFpl20jplv9lY5M3V3vn5bkfBYghr2fm0d+VxBt0BE36cpUM0pzUZNN5/wgV2vJjcc7Ajr8VZI5q0pysufjzT6lLcfHhMNOh2jzU6WTH4jBd14e1tj2s7wmCTmMAxE6iw1i8qqTvkirNuk3G+cf8+9zygA0gzYbyPFl1geQ+asYwap4Twvrbp75sqEkZy2GzAsQD0B3P6q6VsGfbaryeF7sRHtEyQrI4KrzqluWm1Ydzg6FLCHEO+5ewobLnF2zjHN0iB9fh1USWC3DztNyv1+dy67M6wG1/1UI7pudTuLmDgw1wLXFrrHy6200+RU6rmNbgqVC0tTv6E6m0ZCxplziHQdC6RJvp/ZZyZ6FGjFq1NZec7F/AiH5bRuRPlv1RNndRs7qNrIyxgboVndO53XsF2gGMwzS5wNZnhqgWi5yuv+ZoBkWmRstYu6Pl+P4bsKtku68r34M2VWOIIAgCAICmo8NBJsAJPQBBa58+dpcSMdXfiHiM58A/KwANaD1gSepKwcm2fe8JwUKFFU3l8/Pma7i6YYC2PCQLi3Pfloo1XIrwTi01gx9Ws28iSRDM3PYmOo6aokefxE5W73NY9+9yH/ABQLg9uYakgatPPqN1ZxOGlxblLVd+nLxaKKYgOBIMi0cjF/VQ0XoyspJvl9Hb7kqn+EDeQSDoDBGh1BESqXydjoKistu/vqvfJl51NrwXNaQXDxNADm7+JovA3031U6mUVKNm+u6WfW2SGKRNjlf/pLnDzAuPWysjlld92Wmfi43a+31dihzRmu8lojwhuW35dbDyUpeBSV3LM21yilZW6eC8v0K7RMmXHoYHRo2A6K3IznB31N3fyX+I9qlxpsaTLQScu0nfyi3wRE1KTtGU/O3vkuRIwVIPcCfEQZgxBHUbhTcpKnGTKq+BpFzsoBcSTlboOnJoUamhDhISlaOWYzF0cjxAsdvynRWi7o5+Ko9lUTjsympUcC0AwACSekkpYh1qkGlFl/CEmXuPX0F4U7ItTlKo3Um7jA1TnBO5WUkelwNR9pFszJI7wkbnNabTcg/r0Vb4PQjSlT4rG0n985L9DEh0ucfCPC0DVziYGvlKjPIpKqk2+V8G/eykVf8QAYSGd2/vNSHNsADsDnIg9CtKecnF8WlHsUmueDtS1PnQgCAIAgIfGf/j1v/wA3/wDaVD2L0/7rzPnLDV/CBtAWTifoHaq9jH8SqtecoJm8gR8RbVZJWyY1pRqNQWGQcSHNphpaBBkbm978ipW5y1ozp0dLVs3XNmN70DK2ZmJ6zz5678lfS73PKdWnBRp3vd5t49VztfnjGxXTflzB2skg8g0OIHrZHnCFNaJtz8beSu1/iLrMXIFzb+YePzDm6wq6cnYuMvHd45pavNSjvY8wz2Z7gAXMtaHQbQQTdvkTH2l7GfDVKbq95WXVRTzyaeXHxTuvS9roc+7mtYWzHuMPnLTf5qLIuu2alKCTjfpF+d44f1zuQu8JO5GghmWDrEDz81qjzHUlGeq7a2/rZJ+S8/Mk4EsDwagLm7gW/RSy6bnk8o0u/qFoMNAiR01A5XOvkob0q4UXxVVxTskrfIzD+GsbRdN3ADK8EtLb3sLGbKqnk66vw5qN5PYtYZ9Ok0FrST1hoHUqHdnZDTRppJW82kYh5kPJM3JB5iVqjwJzc9Tbve/yIb2Q0zbSOfl5eFSc04aY5KzW/lzZdNQR8/7KSe0dtGxPo0DvlPUESs5I9OhPTbV+S+/GBrds2bLtNht6ys1DJ6VTj1TgpK2Xa/Pbl7t4EnClraQDSbwZtMk7nYAW8yoe9y0NCgoR5tZ55z9joHs74himV206LWjvHtbUDjnhjXAucADEhua56xqFWEmpWRHxDg6cqEqlbu6b2zz5K/mdwXWfIBAEAQBAQ+M06jsPWbRIFU03imTYB5aQ0npMI/AtBpSWrY+ZMVhqlBzmPBaaZLajbHKWmDcTOmotuFmfVKb0qosplnFUMwD2k6/yzInR1ll4M1qSUmmtuvTx9N2RqgBJNQ6tnOAedrfWFVeBeppu+3eLf2s+qtj7jAUG5ojNTDNXCJeXZgQNo0+Ks778zDhqVNPTHNNR585OV00uVtkWsWSAWuiMx06yNPIoaVm4wcJ9fvj7MvYngNOmzxvcah2aQAPkSpVR7FZ/BaSjeUnqfRpfgh0aTWMdfoZER676qG2zOhRhw9KS1ed/368vkRw8tNr2gGS0x5gpg5Vqpy69N07ejJOHrww7fUW5n0v0U3szVSTouO2c/wCv5We/JkYYq4aGk+Zj9Volc5JcZ2TUVC/qUmqc4yuykERHrP0+am2DllVlOulF6fIvcQx7nghzjHIQB5wBf1VIrOEdvGVlONpyb+X6IdYA5CZI5Tfnr8vRapnk1YLutZuVsBBjRoEu3k65QTvoPmhVRkttkX2UwYnXwu9SYVT0o046Y6uqZ66g0uvyUq5lVhTlqbMrQwgEGCR8QqSZ38FCMklJbGOxuEeyq7KYYSI6l0nKI10PwRSTWTmrcLUp13GGIt483y97GQo1ILI9xob/AKnbm+0yfULM9fh4yjKL3irW8XbfyOk+ypjzxDMzMGhru8GUBpEWBhx/mi/9MKaSyYfGqz7HRNbtf9XPY7Sug+WCAIAgCAIDR+1Ps6pYqq+vTqmlUeLiMzHOAjMRqJAAMcpjWauNz0uF+JToxUGrr6nFuJ8FxWFrOoPbldLi0NbIfqM7ZbOU5T8yspWvk9mlpqR1QaSf0b69PIg1zUe0B7JAsS0S46eEmbDRZpJM6qjnVpqMlhYdlnHLw8THNqPbUaCDAMwDZvPTUha2urnlOrOnNR5b74X7MvVc1jiHaOvDWySIG+huDZZI9pVVBu6vdX23MQ+qXiWMMEm5Osbeislk4pVpVo66UHZt5fh+hQyze4NzB3H6I8EUXHVnN8vPNfol161MSGMc4gbwMhJgfVRvk66temk4Qg20vk72XzMfiaDyZgkxe1iOU7qyzg87iaFZtTSu7Z6NdOhZw8eLnlMDfUA+q0ijyarSs2WqLRMmZzNA9Z/srs5qWaq8ya3hbyQXAEaxzVFJHpS4GrUeqX0LOKYW2iBeOlzb4KbmVSlotFrZfn9EUlxBM6Daw+AVkzldKVm74RNwNTM/WwaJ5DLBH0HxVWrI6Kc1ObV8WRIpOnxDUkkxbdQzop6LXR66s9plp8x90bwTT1Kd4OxSH94CCAS1rntj0GnLf0VdjZT/AJGrF3GLlHzwtvqvIk0q5MeGwAbAtfc36/ZVcT0YcVKaSt0Xk+bz4nc/ZD2fZTw/8UQe8qZmiYhrA6CABoS5t5/LtvpTXM8P4txXaVNC2X39s6GtDyQgCAIAgCAIC1UwzHOa5zGlzZykgEtzWMHaRqhKbSsc1wHs0ccfXqVXN/hi9zmsbbvQ8G0D3A2Y6xaAs+zzdno/+QlGlog2n7+5z+p2BxdPHHBspvc1z/BUynKKRMCqXAQABEjmIF4mul7HRT4ilp1y26c7mvcRpPpVH0XmHUqhYYv7ji1zflZZo9lSc6acXbZ+nT5bFvC40RkfJYBlAgNAk+9Y7Cb+ajmXo8RFLTK9li1rLL33e3XwfMhvpNLyaZIaNSfhpeR5qb4OV0qcqrlRbSXXbptm6816F4US1jnuJiLDrfKYGg81C3N+zdKnKrNu1tvHNttvX1IorlwJMX5TP1gKW7HIq0qqblbPS9/fyIxpnMee3RbReDzK9GXaO6L2IwpbTDs7c02aDfzI5K1zkcXGVo4e57S4xUGhtyIt6bjyVXBHdS+IVduXv1LeL4mXkB0RyAspUcGNbjdUsnhouePw4Im4Hy12U7blKjlOKcNuZXT4e/8AmaQjkKXDt3uipoLbC/w+6g0s4uwImQeXny+31UXLSg2vMvYBzg/MNZ1I2NjHofgVWeUdXCKVOab+3oZvA8He+ue6D3ON6YZeXG5YY53+az13wehPhuzbq3suvQ+j+y3CnYXDMoucHEFxkDL7zi4g3N5JuuiKsrHy1eqqs3NIyysYhAEAQBAEAQBAEAQHJvan7PnVC/GYVpLj4qtIauO9Rg3PNu+ousZxayj2uB+IJR7Kr6P8P8HFXNI/f2WXiejKMt0Usy/l+Zj4f3S5nBU07uP1dvl/tiQ4F2pMREAGI5QE5nVNOb7zdtrLa3Sx48MZZoM8zt6c1F8kNU6StDcj0MK97gGAknlrzVkzilTsnJvBcc0gkRoTr9fgtjji9cb2IVekQ63n+/3urrKOKvJxm7Fynh2uFjfcKkm0zt4ehR4iGHnmuZXhXmg6Q3MDYiY31UX1B0HwstSV0y8MW97r6bRYBTZItT4iTllYJfD8A+tVZSptl73NY0c3OIAnkOZ5AlQazkopz5HUe1nss7qjSGEY+o6IqSZc9/gAgAQxvvuJJAGnIKZRfI5eH4xSxUsuhY4V7JasvbUfld3Ae2PdFZ7ngUiby1rWjMRu8R1jS2arj4Rala61etuv68joXYrsc3ANfLhUc/JfLGXuw4CJJv43XtqphDTc5uO4/wDk6UlZK/Pe9v0ja1oeeEAQBAEAQBAEAQBAEBZxh/Def6XfQoDRO03s9wmN/FvRrHV9OIcebmGxPUQTuSqTpps7eH46pRxujU+I+y8UMPUqit3z2eKO5ayWj3v5nEkCT6KnZWW50v4rK91Be/QhcX4PQdgaGIw4LS5xp1gXF2WoG6CdNCR0cFWcVhoxl8T4mas5fKyNRx/DabGU3xZwe10En8SmZIvpLHU3f6zyVXGzQh8Rqx6PzX6K+ytRoxTNrVQfI0qoHzj4q0Y2kinEcdUrR0vC6L2zHYah3lWNrT5fsJOWmNzCNWcH3WZDH9icUaT8Xhm95RYSKjZGZuVocXAGMzYI0v0V6M3ON2VnNyk31NVr0nNPia5pMGHCDe4seh1WpDg7ajoHs27ANx7H169R7aIdkaGQDUIALjLgQGiQNDJnSLw0WhWlH3g6RS9neCayrTo0Qaj6T2sfVJfkeWkNcJs2+7RKnSrFo8RNTTbwiN7OfZzWwuIGJxJZmYHCmxpzeJwy5y6ABALgAJ97aL0jF8zo4niozhogdRVzgEIAgCAIAgCAIAgCAIAgCAICmo2QRzBQGFdV1CsQVqCTlpw3cvxmBPuvBqUv81Id40ebqUjzaAspLDQNTxbQQGH3SS6P6iA0/EAD/SFXDRJBGAphwMGSNQSNP2FaxBkuF8Ppiq4gbcys61tJZm9YjFClwVwbY1KhpeZLpd/00yFpSVoIqYjsbwKnjaz21295SYwyDu4w0QRdpEkgjTIIUpZJudOwGAp4eiyjSaG02DK1o2Hmbkkkkk3JJK0IJPDATWPJrfm42/7Sj2IRmVBIQBAEAQBAEAQBAEAQBAEAQBAEBr/G3ilLoJ6DedNbD15KQYmpxR53ydIBPxP6IDSe2zHisyqCSYaZ/qaT8ohZzdmDVceyIIvuOoKpDazJKxQ93zN9j1HSysgTuHU4c89B91nW2Q5kjHYycLTpyTFatUy8o8LTHUvPwPJaJpRRBtvYKmaGGL7Zqjtxchth11LvirRyrg2lvEDIDm2NgQd/I7dQrAy/BqUNc86ucf8Aa3wj6E+qlkIyCgkIAgCAIAgCAIAgCAIAgCAIAgCAwfanhne084nMydLSOXx+6A5nV49WpvyWy3AkTJiQLmACeixlUcbgwmL43UqVASMsiIaTlMbZSCFTtbq4MTi8eHQMkeR6pF3yWsTcNXLQBY2UqaZKRI4djnlxY2ASAZN+iy4hrTdhpp2KeJ4k0m0muGZxNTxT4o/DN5B3db1V6c1Uje2xGxlODdqKtNpa1oIBu5xJcTAtf4Ke1cbJIWubTwNlfGOaS/LJuGyCADc5p6cuS3hJtXZDR0emwNAA0AgeQViCpAEAQBAEAQBAEAQBAEAQBAEAQBAeEIDkvb/gRo1C4HwvMst7pABifssqkeZN8GlYm5BFp8Q89x9lyJWwH1MVVEu+I+62jhFkSqdc5b8gPVRazLQWSVwB01ndAFlxP9CJf3Z5xx2aq0DYGPN2X/xU8PimUZJwzIhoExHq46fr8FaEdTLrY7V2M4Q7D4Zoqf8AuES7pJJDfmu0zM+gCAIAgCAIAgCAIAgCAIAgCAIAgCAICHxfhrMRSdSqCx0O7SNHDqEBw7tLwOphKxp1BY3Y7Yg2kfpsuWpC2STWXV206zHPEtzAPH9Js4/7SVNNrYgjHFgDe5lEjWPUncGxYa55NrD9fusq6vFIpzLtN2Z5frOiuo91RCOsez7sgWZcTXHi1psO03zuHPkP7LohHSQ3yOgq5AQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQGoe1HKMCSWBxD25Sf5D+b5R6qlR2iwcJ4vQEg89QuSnK5ZohswJIgPZa3iqU2a/53ifSV0Rd8lrYKsLSnMMwgWMQ6YOxBIIWc2r2Km6+zlrP4+ix7A8XgG8GCQfTX/hXpvIkjvS3KhAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEBhe2VcMwNcm8sLQIm7rCx5TPoolswcD4rh5pgmQefy5Lz4StMsjB4p01Mt5m3um49FupWjctLYmYZknIJ5uuNPQCFmpX7wsb97H8TlxrmujxU3NFhIcMpiddAfguim7YIkjtC2KBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAW8RXaxpc4wBuUBpHaHH1cU9raMNYx0nNJLpETlG17XFwpsDXsf2YDw7M4NkyIMiZm4IECepXM+FTlqTJUjEcP7C0c1SpXxLQb5QwgiNbyNZtqp7G8bNlnIiN7JZajiKzQ1xBkmXQIjwi23NVjRl6EKRn+H8BfRd3uGqMzZgcztBBkxlByk6EGdVtCko5uQ5XOm8I4wyu0bOjTn1HMLQgySgBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQGvdug/wDhczJ8L2kgGCW3Bj4hAadw7B/xAcXucC0wCCWkyJmW2BvyKJAlYjgVXIGsxFVh5yKk+eZoPwhGm9mDGs7NYmZfjHu2vQYfmav2VdM+pN0Rv/SuJJE4p0A7MDZ6GHWVVTnzkLoyw7O6Z3vPTNZ3m0NAK0USLlnsm6q/G0xBDQXHf3YOvVAdTQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQEXiVHMyIm8oDBt4bTBlrcs65SRPmNCgIp7N4cvLw0B51IABPnlifVAX/APBh+Yf7GfopuCit2fpv985h5AfSFALmF4LSptysBA1gQ2/PwiSgJ3DOHMY4ZGhsckBmkAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQEfEUhrHmgLHdhAAwID3KEBUxkmEBLa0DRAeoAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgLdY2QEcoAEB4gLlE3QElAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQFqsdkBYQCEAQFVM3CAlIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAIAgCAjP1QFKAIAgDNQgJaAIAgCAIAgCAIAgCAID/2Q=="style= "width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
-          </a>
-            <div class="card-body">
-              <h3>Bouquet de roses</h3>
-              <p class="price">70 DH</p>
-             
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+        <div class="wrap">
+            <h2>Nos best-sellers</h2>
+            <div class="grid products-grid">
+                
+                <!-- Card 1 -->
+                <article class="card">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/..." 
+                         style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Bouquet de roses</h3>
+                        <p class="price">70 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
 
-              </div>
+                <!-- Card 2 -->
+                <article class="card">
+                    <img src="https://img.freepik.com/premium-photo/bunch-mauve-tulip-flowers-vase-isolated-white-background_257123-1600.jpg" 
+                         style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Tulipes</h3>
+                        <p class="price">65 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <img src="https://www.flowersforeveryone.com.au/cdn/shop/files/bright-mixed-vase-of-tulips.jpg?v=1720653057&width=416" 
+                         style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Bouquet mixte</h3>
+                        <p class="price">60 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <img src="https://as2.ftcdn.net/jpg/04/56/35/81/1000_F_456358151_PcerK2Y703adg7Wbk4DvwsF5wTAi3sWa.jpg" 
+                         style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Sunflower</h3>
+                        <p class="price">50 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="card">
+                    <img src="https://m.media-amazon.com/images/I/619HLC4sS6L.jpg" 
+                         style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Daffodil</h3>
+                        <p class="price">60 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="card">
+                    <img src="https://media.istockphoto.com/id/1462549815/photo/3d-rendering-of-a-bouquet-of-white-anemones-in-a-glass-vase-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=V8D9pVfpgFJ8CcE33ClyjDM0RzfyjdWRJoInxbfuk6k=" 
+                         style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Anemone</h3>
+                        <p class="price">40 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/042/409/603/non_2x/ai-generated-white-daisy-flower-with-ceramic-vase-isolated-on-transparent-background-png.png" 
+                         style="width: 220px; height: 220px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Marguerite</h3>
+                        <p class="price">50 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="card">
+                    <img src="https://png.pngtree.com/png-vector/20250329/ourmid/pngtree-beautifully-arranged-bouquet-of-fresh-lavender-flowers-sits-elegantly-in-a-png-image_15894223.png" 
+                         style="width: 210px; height: 210px; object-fit: contain; display: block; margin: auto;">
+                    <div class="card-body">
+                        <h3>Lavande</h3>
+                        <p class="price">70 DH</p>
+                        <div class="card-actions">
+                            <button class="btn small">Voir</button>
+                            <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
+                        </div>
+                    </div>
+                </article>
+
             </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="card">
-            <img src="https://img.freepik.com/premium-photo/bunch-mauve-tulip-flowers-vase-isolated-white-background_257123-1600.jpg"style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
-
-            <div class="card-body">
-              <h3>Tulipes</h3>
-              <p class="price">65 DH</p>
-              
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="card">
-            <img src="https://www.flowersforeveryone.com.au/cdn/shop/files/bright-mixed-vase-of-tulips.jpg?v=1720653057&width=416" style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
-            <div class="card-body">
-              <h3>Bouquet mixte</h3>
-              <p class="price">60 DH</p>
-             
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-
-          <!-- Card 4 -->
-          <article class="card">
-            <img src="https://as2.ftcdn.net/jpg/04/56/35/81/1000_F_456358151_PcerK2Y703adg7Wbk4DvwsF5wTAi3sWa.jpg" style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
-            <div class="card-body">
-              <h3> Sunflower</h3>
-              <p class="price">50 DH</p>
-              
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                 <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-       
-    
-     <!-- Card 5 -->
-          <article class="card">
-            <img src="https://m.media-amazon.com/images/I/619HLC4sS6L.jpg" style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
-            <div class="card-body">
-              <h3>Daffodil </h3>
-              <p class="price">60 DH</p>
-             
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-          <!-- Card 6 -->
-          <article class="card">
-            <img src="https://media.istockphoto.com/id/1462549815/photo/3d-rendering-of-a-bouquet-of-white-anemones-in-a-glass-vase-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=V8D9pVfpgFJ8CcE33ClyjDM0RzfyjdWRJoInxbfuk6k=" style="width: 200px; height: 200px; object-fit: contain; display: block; margin: auto;">
-            <div class="card-body">
-              <h3>Anemone </h3>
-              <p class="price">40 DH </p>
-              
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                 <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-          <!-- Card 7 -->
-          <article class="card">
-            <img src=https://static.vecteezy.com/system/resources/previews/042/409/603/non_2x/ai-generated-white-daisy-flower-with-ceramic-vase-isolated-on-transparent-background-png.png style="width: 220px; height: 220px; object-fit: contain; display: block; margin: auto;">
-            <div class="card-body">
-              <h3>Marguerite  </h3>
-              <p class="price">50 DH</p>
-              
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-          <!-- Card 8 -->
-          <article class="card">
-            <img src="https://png.pngtree.com/png-vector/20250329/ourmid/pngtree-beautifully-arranged-bouquet-of-fresh-lavender-flowers-sits-elegantly-in-a-png-image_15894223.png" style="width: 210px; height: 210px; object-fit: contain; display: block; margin: auto;">
-            <div class="card-body">
-              <h3>Lavande </h3>
-              <p class="price">70 DH</p>
-              
-              <div class="card-actions">
-                <button class="btn small">Voir</button>
-                <a href="https://wa.me/212773358372" class="btn outline small" target="_blank">Ajouter</a>
-
-              </div>
-            </div>
-          </article>
-           </div> 
-      </div>
+        </div>
     </section>
-    
-<div style="display:flex; justify-content:center; margin-top:40px;">
-  <div style="
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:center;
-    border-radius:50px; 
-    width:180px; 
-    height:80px; 
-    background-color:#ffe6f0; 
-    box-shadow:0 4px 12px rgba(0,0,0,0.15);
-    cursor:pointer;
-    transition: all 0.3s;
-    position:relative;
-  " 
-  onmouseover="this.querySelector('.see-text').style.opacity='1';" 
-  onmouseout="this.querySelector('.see-text').style.opacity='0';"
-  >
-    
-    <div style="font-size:32px; color:#e75480; font-weight:bold;">+</div>
-    
-    <div class="see-text" style="
-      position:absolute;
-      bottom:-25px;
-      font-size:14px;
-      color:#e75480;
-      opacity:0;
-      transition: opacity 0.3s;
-    ">See more</div>
-  </div>
-</div>
 
-<section id="about" class="section about">
-  <div class="wrap about-inner">
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>À propos</h2>
+        <p>Contenu à propos...</p>
+    </section>
 
-    <!-text-->
-    <div style="flex:1; text-align:left;">
-      <h2>À propos</h2>
-      <p>Petite boutique locale _ compositions artisanales et fleurs de saison.</p>
-      <h3>📍 <a href="https://www.google.com/maps/search/?api=1&query=Boutique+FloraJoy" target="_blank" style="text-decoration:none; color:#d63384;">Boutique FloraJoy</a></h3>
-      <p>📞 <a href="tel:‪+212773358372‬" style="color:#333; text-decoration:none;">‪+212773358372‬</a></p>
-      <p>📧 <a href="mailto:Boutique_Florajoy@gmail.com" style="color:#333; text-decoration:none;">Boutique_Florajoy@gmail.com</a></p>
-    </div>
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Nom">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
 
-    <!--formulaire -->
-    <div style="flex:1;">
-      <h2>Contact</h2>
-      <form class="contact-form" action="https://formsubmit.co/labouidyabahija@gmail.com" method="POST">
-        <label>Nom<input type="text" name="name" required></label>
-        <label>Email<input type="email" name="email" required></label>
-        <label>Téléphone<input type="tel" name="phone" required></label>
-        <label>Message<textarea name="message" rows="4" required></textarea></label>
-        <input type="hidden" name="_next" value="https://votre-site.com/merci.html">
-        <input type="hidden" name="_captcha" value="false">
-        <button class="btn" type="submit">Envoyer</button>
-      </form>
-    </div>
-
-    <!--photo -->
-    <div style="flex:1; text-align:right;">
-      <img src="https://thumbs.dreamstime.com/b/little-girl-watering-flowers-pots-379181142.jpg"
-           alt="Boutique"
-           style="width:100%; height:auto; object-fit:cover; border-radius:8px;">
-    </div>
-
-  </div>
-</section>
-  </main>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
